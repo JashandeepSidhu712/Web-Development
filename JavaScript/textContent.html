@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function changeName()
+        {
+            var name = document.getElementById("name");
+
+            alert(name.textContent);
+
+            var newname = prompt("Enter new name");
+
+            name.textContent = newname;
+
+        }
+
+    </script>
+</head>
+<body>
+
+    <div class="row" style="display: flex; justify-content: center;">
+        <div class="col">
+            <p>
+                NAME: <span id="name">JASHAN</span>
+            </p>
+
+            <p>
+                <input type="button" value="CLICK HERE" onclick="changeName()">
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
